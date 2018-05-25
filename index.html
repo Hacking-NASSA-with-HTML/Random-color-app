@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+	<title>Randome color</title>
+	<style type="text/css">
+		.greeting-text {
+			margin: 0 auto;
+      width: 600px;
+      text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="greeting-text">
+	<p> Hi </p>
+	<p> This is Random color app for background every time app starting.</p>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	var color = randomColor();
+
+$("body").css("background", color);
+
+
+});
+</script>
+
+</body>
+</html>
